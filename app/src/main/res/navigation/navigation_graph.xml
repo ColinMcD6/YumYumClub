@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/browse_navigation_bar">
+
+    <fragment
+        android:id="@+id/browse_navigation_bar"
+        android:name="recipebook.presentation.BrowseRecipeFragment"
+        android:label="Browse">
+        <action
+            android:id="@+id/sendKeyword"
+            app:destination="@id/search_result">
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/saved_navigation_bar"
+        android:name="recipebook.presentation.SavedFolderFragment"
+        android:label="Saved">
+        <action
+            android:id="@+id/insideFolder"
+            app:destination="@id/inside_saved"
+            app:enterAnim="@anim/nav_default_enter_anim">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_recipe_navigation_bar"
+        android:name="recipebook.presentation.CreateRecipeFragment"
+        android:label="Create Recipe">
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopping_list_navigation_bar"
+        android:name="recipebook.presentation.ShoppingListFragment"
+        android:label="See Shopping List">
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/account_navigation_bar"
+        android:name="recipebook.presentation.UpdateAccountFragment"
+        android:label="Update"/>
+
+    <fragment
+        android:id="@+id/inside_saved"
+        android:name="recipebook.presentation.SavedRecipesFragment"
+        android:label="Inside Saved">
+        <argument
+            android:name="folderName"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/search_result"
+        android:name="recipebook.presentation.SearchResultFragment"
+        android:label="Search Result">
+        <argument
+            android:name="keyword"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Add other fragment destinations similarly. -->
+</navigation>

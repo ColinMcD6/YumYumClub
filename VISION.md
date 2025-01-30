@@ -1,0 +1,15 @@
+# YumYumBook
+
+Our vision for YumYumBook is to create a customizable personal kitchen assistant, providing a tailored recipe collection with many options to explore. It is a hub for cooks to store, view, and interact with recipes from all around the world. It aims to make cooking more convenient in the current digital world and to be more sustainable by reducing paper use. YumYumBook allows users to find recipes based on their preferences and share their recipes with the world.
+
+We see this app being used mostly by new cooks looking for recipes to try as they start their cooking journey. To accommodate them we plan on providing a wide variety of easy-to-cook delicious recipes, and providing them a grocery list short-cut to gather all required ingredients on a shopping list for them.
+
+This app would also benefit experienced cooks as it offers an easy way to find new recipes while also offering the flexibility to create personalized recipes, a feature not offered in most cooking applications.
+
+Our digital recipe book will allow users to look through a selection of recipes and save a copy of the ones they like in a personal folder. Users can conveniently follow recipes with detailed steps without ads or distracting backstories to make the cooking process easier. This product will make it easy to search for recipes based on their name, and can filter the results based on the specified recipe categories. It will also group recipes by these categories while casually browsing to make the browsing experience feel more organized. It will allow users to comment and leave reviews on the recipes that can help others when choosing what they want to cook. Additionally, users can create their own recipe for everyone to see, and add recipe ingredients to a list to help them organize their next grocery shopping trip.
+
+This project is valuable because it aims to transform cooking habits by making detailed recipes available to the user and promoting sustainability in the digital age. It can contain more recipes than in a physical cookbook which saves space in the kitchen. Unlike cooking blogs where you need to scroll through various ads and author’s backstories, our product will make finding the measurements and steps easier by only providing the user with crucial information. Additionally, blogs do not have the feature to save recipes and the user has to go through the painstaking process of searching for the recipe each time whereas YumYumBook will allow users to organize their saved recipes into different folders.
+
+Our project will be deemed successful if 15% of new users become recurring users, which we define as someone who continues to use the app after one month. Another criterion is that 25% of recurring users use the app 3 or more times per week. This will demonstrate that our app is easy and convenient to follow when cooking. To ensure the goal of getting the users to experiment with new recipes is met, we will survey our users to see how easy it is for them to discover new recipes. If more than 75% say they find it easy, the success criteria will be met.
+
+

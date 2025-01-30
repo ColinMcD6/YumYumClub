@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_bottom_sheet_bt"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="17dp"
+            android:layout_weight="0"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/purple_500"
+            app:srcCompat="@drawable/close_clear_icon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Save recipe"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/add_folder_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="17dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:text="Add Folder"
+            android:visibility="invisible"
+            app:icon="@drawable/add_icon" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/folder_checkbox_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Complete"
+        android:textAlignment="viewStart"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/complete_icon" />
+</LinearLayout>

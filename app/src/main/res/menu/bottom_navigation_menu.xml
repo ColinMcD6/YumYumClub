@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/browse_navigation_bar"
+        android:enabled="true"
+        android:icon="@drawable/search_icon"
+        android:title="Browse"/>
+    <item
+        android:id="@+id/saved_navigation_bar"
+        android:enabled="true"
+        android:icon="@drawable/saved_icon"
+        android:title="Saved"/>
+    <item
+        android:id="@+id/create_recipe_navigation_bar"
+        android:enabled="true"
+        android:icon="@drawable/add_recipe_icon"
+        android:title="Add Recipe"/>
+    <item
+        android:id="@+id/shopping_list_navigation_bar"
+        android:enabled="true"
+        android:icon="@drawable/shopping_icon"
+        android:title="ShoppingList"/>
+    <item
+        android:id="@+id/account_navigation_bar"
+        android:enabled="true"
+        android:icon="@drawable/account_manage_icon"
+        android:title="Account"/>
+</menu>

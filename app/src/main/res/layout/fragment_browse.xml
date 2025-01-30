@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/browse_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="recipebook.presentation.BrowseRecipeFragment"
+    tools:visibility="visible">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/outter_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/searchbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/browse_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:paddingTop="80dp"
+            android:visibility="gone" />
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/start_search_bar"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:focusable="false"
+        android:hint="Time for YumYum!"
+        android:visibility="visible"
+        app:defaultMarginsEnabled="false"
+        app:elevation="0dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_card_view"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#EBE5EF"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/search_bt"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="0"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/search_icon"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:inputType="text"
+                    android:textColorLink="?attr/colorOnSurfaceVariant"
+                    android:textIsSelectable="false"
+                    android:textSize="16dp" />
+
+                <ImageButton
+                    android:id="@+id/clear_bt"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="0"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/close_clear_icon"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/browse_loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

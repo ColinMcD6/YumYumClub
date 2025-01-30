@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YumYumClub</string>
+    <string name="recipe_title">Recipe title</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="creator">Creator</string>
+    <string name="tags">Tags</string>
+    <string name="url">URL</string>
+
+    <string-array name="filter_spinner">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+</resources>

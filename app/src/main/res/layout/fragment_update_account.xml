@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="recipebook.presentation.UpdateAccountFragment">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/avatar" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logOut_bt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="Log out"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/emailView_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="14dp"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changeName_box_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Name"
+        android:layout_marginTop="14dp"
+        app:helperText="Your User Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeName_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:inputType="textEmailAddress"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changePassword_box_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        app:boxStrokeColor="@color/custom_input_layer"
+        app:endIconMode="password_toggle"
+        app:helperText="Change Password"
+        app:layout_constraintTop_toBottomOf="@+id/changeName_box_layout"
+        app:startIconContentDescription="PW">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePassword_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Confirm"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp" />
+
+</LinearLayout>
